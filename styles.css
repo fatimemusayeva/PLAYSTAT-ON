@@ -16,6 +16,15 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* Kabinet konteyneri (ortala) */
+#kabinetler {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Üfüqi mərkəzləşdir */
+  align-items: flex-start;
+  gap: 15px; /* Kabinetlər arası boşluq */
+}
+
 /* Kabinet kartları */
 .kabinet {
   background: #1e1e2f;
@@ -209,8 +218,7 @@ tr:hover { background: #33334d; }
   .kabinet { width: 90%; margin: 5px; }
 }
 
-
-
+/* Top controls (reset all) */
 .top-controls {
   text-align: center;
   margin-bottom: 20px;
@@ -227,7 +235,6 @@ tr:hover { background: #33334d; }
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .reset-all-btn:hover {
   background: #ff0000;
   transform: scale(1.05);
